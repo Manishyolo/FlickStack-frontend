@@ -2,9 +2,9 @@ import { LuSearch } from "react-icons/lu";
 
 import React from 'react'
 
-const SearchIcon = () => {
+const SearchIcon = ({size}) => {
   return (
- <LuSearch />
+ <LuSearch className={`${size}`} />
   )
 }
 
