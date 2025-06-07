@@ -1,9 +1,9 @@
 import React from 'react'
 import { AiOutlineLike } from "react-icons/ai";
 
-const LikeIcon = () => {
+const LikeIcon = ({size,color}) => {
   return (
-    <AiOutlineLike />
+    <AiOutlineLike className={`${size} ${color}`} />
   )
 }
 
