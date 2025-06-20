@@ -103,8 +103,8 @@ const SearchPanel = ({
                         }}
                         className="format-selection p-[.5vw]  bg-[#1E1C21] absolute  top-[4.8vw] left-0 rounded-[1vw] w-fit h-fit"
                       >
-                        <Link
-                          onClick={formatHandler}
+                        <h2
+                        
                           className="text-[1.11vw] p-[.9vw] text-[#FCFAFF] flex items-center gap-[1.7vw]
               rounded-[.8vw] transition-colors duration-100 ease-in
               hover:bg-[#403a4a3e]"
@@ -115,10 +115,11 @@ const SearchPanel = ({
                               color="text-[#D8C1FF]"
                             ></ImageIcon>
                           </span>
-                          Photos
-                        </Link>
-                        <Link
-                          onClick={formatHandler}
+                          <h3   onClick={formatHandler}> Photos</h3>
+                         
+                        </h2>
+                        <h2
+                          
                           className="text-[1.11vw] p-[.9vw] text-[#FCFAFF] flex items-center gap-[1.7vw]
               rounded-[.8vw] transition-colors duration-100 ease-in
               hover:bg-[#403a4a3e]"
@@ -129,8 +130,9 @@ const SearchPanel = ({
                               color="text-[#D8C1FF]"
                             ></VideoIcon>
                           </span>
-                          Videos
-                        </Link>
+                          <h3 onClick={formatHandler}>Videos</h3>
+                        
+                        </h2>
                       </motion.div>
                     )}
                   </AnimatePresence>
