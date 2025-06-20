@@ -3,6 +3,9 @@ import RootLayout from "../layouts/RootLayout";
 import Home from "../pages/Home";
 import Login from "../pages/Login";
 import Explore from "../pages/Explore";
+import Trending from "../pages/Trending";
+import YouLiked from "../pages/YouLiked";
+import MostLiked from "../pages/MostLiked";
 import FollowingList from "../pages/FollowingList";
 import MyProfile from "../pages/MyProfile";
 import NotFound from "../pages/NotFound";
@@ -22,6 +25,9 @@ const router = createBrowserRouter([
             {path:"",element:<Home></Home>},
             {path:"Login/:id",element:<Login></Login>},
             {path:"Explore",element:<Explore></Explore>},
+            {path:"Trending",element:<Trending></Trending>},
+            {path:"MostLiked",element:<MostLiked></MostLiked>},
+            {path:"YouLiked",element:<YouLiked></YouLiked>},
             {path:"FollowingList",element:<FollowingList></FollowingList>},
             {path:"MyProfile",element:<MyProfile></MyProfile>},
             {path:"*",element:<NotFound></NotFound>}  

@@ -13,18 +13,22 @@ const NavigationLinks = ({ showExplore, setShowExplore }) => {
     {
       title: "Discover Photos",
       icon: <DiscoverIcon size="text-[1.7vw]" color="text-[#D8C1FF]" />,
+      direct: "/Explore"
     },
     {
       title: "Trending Now",
       icon: <TrendingIcon size="text-[1.7vw]" color="text-[#D8C1FF]" />,
+      direct: "/Trending"
     },
     {
       title: "Most Liked",
       icon: <LikeIcon size="text-[1.7vw]" color="text-[#D8C1FF]" />,
+      direct:"/MostLiked"
     },
     {
       title: "Based on Your Likes",
       icon: <UserPrefrenceIcon size="text-[1.7vw]" color="text-[#D8C1FF]" />,
+      direct:"/YouLiked"
     },
   ];
 
@@ -33,7 +37,7 @@ const NavigationLinks = ({ showExplore, setShowExplore }) => {
       <span className="logo text-[1.7vw]">FlickStack.</span>
       <Link to="/">Home</Link>
       <Link
-        to="/Explore"
+      
         className={`flex items-center justify-center ${
           showExplore ? "bg-[#1E1C21]" : ""
         } rounded-[1.6vw] pl-[1vw] p-[.5vw]`}
