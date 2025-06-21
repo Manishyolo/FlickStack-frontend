@@ -17,16 +17,16 @@ const UserDropdropdown = ({ animateState }) => {
           className="user-panel-wrapper w-fit h-fit absolute top-[4.3vw] right-0 z-50"
         >
           <div className="user-panel bg-[#1E1C21] p-[.8vw] rounded-[1vw] flex flex-col gap-[.8vw]">
-            <Link
+            <Link to={"/MyProfile"}
               className="whitespace-nowrap text-[1.11vw] p-[.9vw] text-[#FCFAFF] flex items-center gap-[1vw]
              rounded-[.8vw] transition-colors duration-100 ease-in
              hover:bg-[#403a4a3e]"
             >
               <UserIcon size="text-[1.7vw]" color="text-[#D8C1FF]" />
               Your Profile
-            </Link>
+            </Link> 
 
-            <Link
+            <Link to={"/Collection"}
               className="whitespace-nowrap text-[1.11vw] p-[.9vw] text-[#FCFAFF] flex items-center gap-[1vw]
              rounded-[.8vw] transition-colors duration-100 ease-in
              hover:bg-[#403a4a3e]"
@@ -35,7 +35,7 @@ const UserDropdropdown = ({ animateState }) => {
               Your Collections
             </Link>
 
-            <Link
+            <Link to={"/Settings"}
               className="whitespace-nowrap text-[1.11vw] p-[.9vw] text-[#FCFAFF] flex items-center gap-[1vw]
              rounded-[.8vw] transition-colors duration-100 ease-in
              hover:bg-[#403a4a3e]"

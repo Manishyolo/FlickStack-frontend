@@ -8,6 +8,7 @@ import YouLiked from "../pages/YouLiked";
 import MostLiked from "../pages/MostLiked";
 import FollowingList from "../pages/FollowingList";
 import MyProfile from "../pages/MyProfile";
+import Collection from "../pages/Collection"
 import NotFound from "../pages/NotFound";
 import PostDetail from "../pages/PostDetail";
 import Register from "../pages/Register";
@@ -30,6 +31,9 @@ const router = createBrowserRouter([
             {path:"YouLiked",element:<YouLiked></YouLiked>},
             {path:"FollowingList",element:<FollowingList></FollowingList>},
             {path:"MyProfile",element:<MyProfile></MyProfile>},
+            {path:"Collection",element:<Collection></Collection>},
+            {path:"Settings",element:<Settings></Settings>},
+
             {path:"*",element:<NotFound></NotFound>}  
         ]
     }
