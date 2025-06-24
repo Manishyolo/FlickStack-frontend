@@ -5,7 +5,7 @@
 * {
 
   font-family: "Geist", sans-serif;
-  font-weight: 500;
+ 
 
   
 }
@@ -18,4 +18,18 @@ body{
 
 .number{
    font-family: "Geist Mono", monospace;
+}
+@keyframes glow {
+  0%, 100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 2;
+    transform: scale(1.2);
+  }
+}
+
+.animate-glow {
+  animation: glow 7s ease-in-out infinite;
 }

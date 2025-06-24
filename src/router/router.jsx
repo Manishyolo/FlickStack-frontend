@@ -18,25 +18,23 @@ import Upload from "../pages/Upload";
 import UserProfile from "../pages/UserProfile";
 
 const router = createBrowserRouter([
-    {
-        path:'/',
-        element:<RootLayout></RootLayout>,
-    
-        children:[
-            {path:"",element:<Home></Home>},
-            {path:"Login/:id",element:<Login></Login>},
-            {path:"Explore",element:<Explore></Explore>},
-            {path:"Trending",element:<Trending></Trending>},
-            {path:"MostLiked",element:<MostLiked></MostLiked>},
-            {path:"YouLiked",element:<YouLiked></YouLiked>},
-            {path:"FollowingList",element:<FollowingList></FollowingList>},
-            {path:"MyProfile",element:<MyProfile></MyProfile>},
-            {path:"Collection",element:<Collection></Collection>},
-            {path:"Settings",element:<Settings></Settings>},
-
-            {path:"*",element:<NotFound></NotFound>}  
-        ]
-    }
+  {
+    path: '/',
+    element: <RootLayout />,
+    children: [
+      { index: true, element: <Home /> }, // ✅ Default route ("/")
+      { path: "Login/:id", element: <Login /> },
+      { path: "Explore", element: <Explore /> },
+      { path: "Trending", element: <Trending /> },
+      { path: "MostLiked", element: <MostLiked /> },
+      { path: "YouLiked", element: <YouLiked /> },
+      { path: "FollowingList", element: <FollowingList /> },
+      { path: "MyProfile", element: <MyProfile /> },
+      { path: "Collection", element: <Collection /> },
+      { path: "Settings", element: <Settings /> },
+      { path: "*", element: <NotFound /> }
+    ]
+  }
 ]);
 
 

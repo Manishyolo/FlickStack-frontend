@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="w-full h-[11vh] sticky top-0 bg-[#0b0a0dce] backdrop-blur-md  pl-[2vw] pr-[2vw] flex items-center justify-between text-[#FCFAFF] z-50 ">
+      <div className="w-full h-[11vh] fixed top-0 bg-[#0b0a0d0a] backdrop-blur-md  pl-[2vw] pr-[2vw] flex items-center justify-between text-[#FCFAFF] z-50 ">
         <NavigationLinks
           showExplore={NavbarState.ShowExploreDropdown}
           setShowExplore={NavbarState.setExploreShowDropDown}
