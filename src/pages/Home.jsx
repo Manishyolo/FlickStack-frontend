@@ -3,7 +3,7 @@ import BlobBottomLeft from "../components/blobs/BlobBottomLeft";
 import BlobTopRight from "../components/blobs/BlobTopRight";
 import Page1 from "../components/Page1";
 import Page2 from "../components/Page2";
-import Button from "../components/Button";
+import Button from "../components/Button1";
 
 const Home = () => {
   return (
