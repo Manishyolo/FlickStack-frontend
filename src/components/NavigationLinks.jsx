@@ -5,7 +5,7 @@ import DiscoverIcon from "../icons/DiscoverIcon";
 import TrendingIcon from "../icons/TrendingIcon";
 import LikeIcon from "../icons/LikeIcon";
 import UserPrefrenceIcon from "../icons/UserPrefrenceIcon";
-import ExploreDropdown from "./ExploreDropdown";
+import ExploreDropdown from "./Dropdown";
 import DropdownIcon from "../icons/DropdownIcon";
 
 const NavigationLinks = ({ showExplore, setShowExplore }) => {
