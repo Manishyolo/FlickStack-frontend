@@ -38,3 +38,17 @@ body{
   animation: glow 7s ease-in-out infinite;
 }
 
+.img-gallery{
+  column-width: 30vw;
+  gap: 2.2vw;
+}
+  @media (max-width: 768px) {
+    .img-gallery {
+      column-width: 50vw;
+      gap: 1.5vw;
+    }
+  }
+img{
+  width: 100%;
+
+}
