@@ -1,8 +1,8 @@
 import React from "react";
 import BlobBottomLeft from "../components/blobs/BlobBottomLeft";
 import BlobTopRight from "../components/blobs/BlobTopRight";
-import Page1 from "../components/Page1";
-import Page2 from "../components/Page2";
+import LandingPage from "../components/HomePageComponents/LandingPage";
+import GalleryPage from "../components/HomePageComponents/GalleryPage";
 
 
 const Home = () => {
@@ -11,8 +11,8 @@ const Home = () => {
       <div className="text-[#FCFAFF]  overflow-x-hidden overflow-y-hidden relative bg-[#0B0A0D] w-[100%] h-fit flex flex-col items-center justify-center ">
        
 
-        <Page1 />
-        <Page2 />
+        <LandingPage />
+        <GalleryPage />
       </div>
     </>
   );

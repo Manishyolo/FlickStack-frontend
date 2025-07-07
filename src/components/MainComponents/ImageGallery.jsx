@@ -2,11 +2,11 @@ import React from "react";
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { images } from "./data.js"; // your 100 random-size images
+import { images } from "../data.js"; // your 100 random-size images
 
 
-import SaveController from "../components/ImageGalleryComponents/SaveController.jsx";
-import UploaderController from "../components/ImageGalleryComponents/UploaderController.jsx";
+import SaveController from "../ImageGalleryComponents/SaveController.jsx";
+import UploaderController from "../ImageGalleryComponents/UploaderController.jsx";
 const ImageGallery = () => {
    const [hoveredImageId,sethoveredImageId] = useState(null);
    console.log(images);

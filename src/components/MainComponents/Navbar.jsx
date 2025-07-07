@@ -1,8 +1,8 @@
-import useNavbarState from "../hooks/useNavbarState";
+import useNavbarState from "../../hooks/useNavbarState";
 
-import NavigationLinks from "./NavBarComponents/NavigationLinks";
-import SearchPanel from "./NavBarComponents/SearchPanel";
-import UserNavigation from "./NavBarComponents/UserNavigation";
+import NavigationLinks from "../NavBarComponents/NavigationLinks";
+import SearchPanel from "../NavBarComponents/SearchPanel";
+import UserNavigation from "../NavBarComponents/UserNavigation";
 
 const Navbar = () => {
   const NavbarState = useNavbarState();

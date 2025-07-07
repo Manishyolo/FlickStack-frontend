@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
+import Navbar from '../components/MainComponents/Navbar'
 import { Outlet } from 'react-router'
 import { useLocation } from 'react-router'
 import { useEffect } from 'react'
