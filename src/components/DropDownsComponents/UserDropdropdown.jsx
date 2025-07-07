@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router';
-import UserIcon from "../icons/UserIcon";
-import SettingIcon from "../icons/SettingIcon";
-import LogoutIcon from "../icons/LogoutIcon";
-import UserCollectionIcon from "../icons/UserCollectionIcon";
+import UserIcon from "../../icons/UserIcon";
+import SettingIcon from "../../icons/SettingIcon";
+import LogoutIcon from "../../icons/LogoutIcon";
+import UserCollectionIcon from "../../icons/UserCollectionIcon";
 import { motion, AnimatePresence } from "framer-motion";
 
 const UserDropdropdown = ({ animateState }) => {

@@ -1,8 +1,8 @@
 import React from "react";
-import NotificationDropdropdown from "./NotificationDropdropdown";
-import UserDropdropdown from "./UserDropdropdown";
-import BellIcon from "../icons/BellIcon";
-import ChatIcon from "../icons/ChatIcon";
+import NotificationDropdropdown from "../DropDownsComponents/NotificationDropdropdown.jsx";
+import UserDropdropdown from "../DropDownsComponents/UserDropdropdown";
+import BellIcon from "../../icons/BellIcon.jsx";
+import ChatIcon from "../../icons/ChatIcon";
 
 const UserNavigation = ({
   notificationDropdown,

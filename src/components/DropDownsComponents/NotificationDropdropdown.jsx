@@ -1,5 +1,5 @@
 import React from 'react'
-import AlertIcon from '../icons/AlertIcon'
+import AlertIcon from '../../icons/AlertIcon.jsx'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const NotificationDropdropdown = ({ animateState }) => {

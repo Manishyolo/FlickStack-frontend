@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import DropdownIcon from "../icons/DropdownIcon";
+import DropdownIcon from "../../icons/DropdownIcon.jsx";
 
 const DynamicDropdownSelector = ({ data }) => {
   const [showDropDownSelector, setDropdownSelector] = useState(false);

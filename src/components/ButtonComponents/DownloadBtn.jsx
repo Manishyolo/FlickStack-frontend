@@ -1,5 +1,5 @@
 import React from 'react'
-import DownloadIcon from '../icons/DownloadIcon'
+import DownloadIcon from '../../icons/DownloadIcon'
 const DownloadBtn = () => {
   return (
     <>

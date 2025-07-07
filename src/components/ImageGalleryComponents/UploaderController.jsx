@@ -1,5 +1,5 @@
 import React from 'react'
-import DownloadBtn from "./DownloadBtn.jsx";
+import DownloadBtn from "../ButtonComponents/DownloadBtn.jsx";
 import { motion, AnimatePresence } from 'framer-motion';
 
 const UploaderController = ({animateState}) => {
@@ -18,7 +18,7 @@ const UploaderController = ({animateState}) => {
                     <img className="w-full h-full object-cover" src="https://avatars.githubusercontent.com/u/113233807?v=4" alt="" />
                   </span>
                    
-                    <h2 className="font-[550] text-[#D2CED9] text-[1.1vw]">Manish Kumar singh</h2>
+                    <h2 className="font-[650] text-[#ffff] text-[1.1vw]">Manish Kumar singh</h2>
                        
                 </div>
                 <div className="download-btn  w-fit h-fit">

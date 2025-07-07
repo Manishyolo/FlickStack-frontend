@@ -1,11 +1,11 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router";
-import SearchIcon from "../icons/SearchIcon";
-import DropdownIcon from "../icons/DropdownIcon";
-import ImageIcon from "../icons/ImageIcon";
-import VideoIcon from "../icons/VideoIcon";
-import CancelIcon from "../icons/CancelIcon";
+import SearchIcon from "../../icons/SearchIcon";
+import DropdownIcon from "../../icons/DropdownIcon";
+import ImageIcon from "../../icons/ImageIcon";
+import VideoIcon from "../../icons/VideoIcon";
+import CancelIcon from "../../icons/CancelIcon";
 
 const SearchPanel = ({
   showSearchPanel,

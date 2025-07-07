@@ -1,5 +1,5 @@
 import React from 'react'
-import DynamicDropdownSelector from './DynamicDropdownSelector'
+import DynamicDropdownSelector from './DropDownsComponents/DynamicDropdownSelector'
 
 import ImageGallery from './ImageGallery'
 const Page2 = () => {

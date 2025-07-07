@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router";
 import { motion } from "framer-motion";
-import DiscoverIcon from "../icons/DiscoverIcon";
-import TrendingIcon from "../icons/TrendingIcon";
-import LikeIcon from "../icons/LikeIcon";
-import UserPrefrenceIcon from "../icons/UserPrefrenceIcon";
-import ExploreDropdown from "./Dropdown";
-import DropdownIcon from "../icons/DropdownIcon";
+import DiscoverIcon from "../../icons/DiscoverIcon.jsx";
+import TrendingIcon from "../../icons/TrendingIcon";
+import LikeIcon from "../../icons/LikeIcon";
+import UserPrefrenceIcon from "../../icons/UserPrefrenceIcon";
+import ExploreDropdown from "../DropDownsComponents/Dropdown.jsx";
+import DropdownIcon from "../../icons/DropdownIcon";
 
 const NavigationLinks = ({ showExplore, setShowExplore }) => {
   const exploreLinks = [
