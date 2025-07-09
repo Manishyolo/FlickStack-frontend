@@ -7,8 +7,10 @@ import { images } from "../data.js"; // your 100 random-size images
 
 import SaveController from "../ImageGalleryComponents/SaveController.jsx";
 import UploaderController from "../ImageGalleryComponents/UploaderController.jsx";
+import ProfileInfo from "../ImageGalleryComponents/ProfileInfo.jsx";
 const ImageGallery = () => {
    const [hoveredImageId,sethoveredImageId] = useState(null);
+   const [showUploader,setshowUploader] = useState(false);
    console.log(images);
    
 
@@ -20,12 +22,13 @@ const ImageGallery = () => {
           return (
             <div  onMouseOver={()=>sethoveredImageId(image.id)} onMouseOut={()=>sethoveredImageId(null)}
               key={index}
-              className="gallery-item relative cursor-pointer overflow-hidden rounded-[1vw] mb-[2.2vw]"
+              className="gallery-item relative flex justify-center cursor-pointer overflow-hidden rounded-[1vw] mb-[2.2vw]"
             >
+           
               {hoveredImageId === image.id && (
                 <>
                                  <SaveController animateState={true} ></SaveController>
-          <UploaderController animateState={true} ></UploaderController>
+          <UploaderController imgData={{hoveredImageId:hoveredImageId,currentimgId:image.id}} animateState={true} ></UploaderController>
                 </>
 
               )}

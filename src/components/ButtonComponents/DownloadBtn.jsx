@@ -4,7 +4,7 @@ const DownloadBtn = () => {
   return (
     <>
       <div className='download-btn cursor-pointer'>
-        <button className=' flex flex-row items-center rounded-[.9vw] bg-[#252329] gap-[.5vw] p-[.9vw]'>
+        <button className='cursor-pointer flex flex-row items-center rounded-[.9vw] bg-[#252329db] hover:bg-[#252329] gap-[.5vw] p-[.9vw]'>
              <span>
         <DownloadIcon size="text-[1.6vw]" color="text-[#D8C1FF]"></DownloadIcon>
       </span>
