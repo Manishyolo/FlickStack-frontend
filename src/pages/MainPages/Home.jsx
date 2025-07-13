@@ -1,8 +1,7 @@
 import React from "react";
-import BlobBottomLeft from "../components/blobs/BlobBottomLeft";
-import BlobTopRight from "../components/blobs/BlobTopRight";
-import LandingPage from "../components/HomePageComponents/LandingPage";
-import GalleryPage from "../components/HomePageComponents/GalleryPage";
+
+import LandingPage from "../../components/HomePageComponents/LandingPage";
+import GalleryPage from "../../components/HomePageComponents/GalleryPage";
 
 
 const Home = () => {

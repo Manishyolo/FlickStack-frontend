@@ -1,34 +1,37 @@
 import {createBrowserRouter} from "react-router";
 import RootLayout from "../layouts/RootLayout";
-import Home from "../pages/Home";
-import Login from "../pages/Login";
-import Explore from "../pages/Explore";
-import Trending from "../pages/Trending";
-import YouLiked from "../pages/YouLiked";
-import MostLiked from "../pages/MostLiked";
-import FollowingList from "../pages/FollowingList";
-import MyProfile from "../pages/MyProfile";
-import Collection from "../pages/Collection"
+import Home from "../pages/MainPages/Home";
+
+import Explore from "../pages/ExplorePages/Explore";
+import Trending from "../pages/ExplorePages/Trending";
+import YouLiked from "../pages/ExplorePages/YouLiked";
+import MostLiked from "../pages/ExplorePages/MostLiked";
+
+import MyProfile from "../pages/UserPages/MyProfile";
+import Collection from "../pages/UserPages/Collection"
 import NotFound from "../pages/NotFound";
-import PostDetail from "../pages/PostDetail";
-import Register from "../pages/Register";
-import SavedPosts from "../pages/SavedPosts";
-import Settings from "../pages/Settings";
-import Upload from "../pages/Upload";
-import UserProfile from "../pages/UserProfile";
+
+import Settings from "../pages/UserPages/Settings";
+import Upload from "../pages/UserPages/Upload";
+
+import Auth from "../pages/AuthPages/Auth";
 
 const router = createBrowserRouter([
+  {
+    path: '/Auth',
+    element: <Auth />
+  },
   {
     path: '/',
     element: <RootLayout />,
     children: [
       { index: true, element: <Home /> }, // ✅ Default route ("/")
-      { path: "Login/:id", element: <Login /> },
+     
       { path: "Explore", element: <Explore /> },
       { path: "Trending", element: <Trending /> },
       { path: "MostLiked", element: <MostLiked /> },
       { path: "YouLiked", element: <YouLiked /> },
-      { path: "FollowingList", element: <FollowingList /> },
+    
       { path: "MyProfile", element: <MyProfile /> },
       { path: "Collection", element: <Collection /> },
       { path: "Settings", element: <Settings /> },
