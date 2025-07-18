@@ -38,6 +38,25 @@ body{
   animation: glow 7s ease-in-out infinite;
 }
 
+@keyframes glow2 {
+  0% {
+    opacity: 0.7;
+    transform:  rotate(0deg);
+  }
+  50% {
+    opacity: 1.2;
+    transform:  rotate(180deg);
+  }
+  100% {
+    opacity: 0.7;
+      transform:  rotate(360deg);
+  }
+}
+
+.animate-glow2 {
+  animation: glow2 7s linear infinite;
+}
+
 .img-gallery{
   column-width: 30vw;
   gap: 2.2vw;
