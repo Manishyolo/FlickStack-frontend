@@ -13,7 +13,7 @@
     "@remixicon/react": "^4.6.0",
     "@tailwindcss/vite": "^4.1.10",
     "axios": "^1.9.0",
-    "dotenv": "^16.5.0",
+    "dotenv": "^16.6.1",
     "motion": "^12.16.0",
     "nprogress": "^0.2.0",
     "react": "^19.1.0",
