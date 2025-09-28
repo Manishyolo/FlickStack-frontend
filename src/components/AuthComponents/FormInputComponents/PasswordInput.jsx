@@ -1,16 +1,16 @@
 import React from 'react'
+import EyeShowicon from "../../../icons/EyeShowicon";
+import EyeHideicon from "../../../icons/EyeHideicon";
+import WarningIcon from "../../../icons/WarningIcon";
 import { useState } from 'react';
-import EyeShowicon from "../../icons/EyeShowicon";
-import EyeHideicon from "../../icons/EyeHideicon";
-import WarningIcon from "../../icons/WarningIcon";
 
-const InputField = ({label,name,placeholder,handleChange,errorMessage}) => {
+
+const PasswordInput = ({label,name,placeholder,handleChange,errorMessage}) => {
+    const [type,setType] = useState(name === "password" ? true : false);
+    const handleType = ()=>{
   
-   const [type,setType] = useState(name === "password" ? true : false);
-  const handleType = ()=>{
-
-    setType(!type);
-  }
+      setType(!type);
+    }
   return (
    <>
    <div className="input-wrapper relative">
@@ -33,7 +33,7 @@ const InputField = ({label,name,placeholder,handleChange,errorMessage}) => {
             type={type ? "password" : "text"}
             className="w-[30vw] relative h-[3.4vw] border  rounded-[.7vw] placeholder-[#D2CED9] text-[#FCFAFF] text-[1vw] border-none outline-none p-[.8vw] bg-[#1E1C21]"
           />
-          {name === "password" && ( <span onClick={handleType} className='w-[2.2vw] h-[2.1vw] hover:bg-[#77737e80] rounded-full absolute right-[.8vw] top-[3vw] flex items-center justify-center'>
+          {name === "password" && ( <span onClick={handleType} className='w-[2.2vw] h-[2.1vw] hover:bg-[#77737e80] rounded-full absolute right-[.8vw] bottom-[.6vw] flex items-center justify-center'>
             {type ? (
              
            <EyeShowicon  size="text-[1.5vw]" color="text-[#D8C1FF]" />
@@ -44,10 +44,9 @@ const InputField = ({label,name,placeholder,handleChange,errorMessage}) => {
 
          
    </div>
-    
    
    </>
   )
 }
 
-export default InputField
+export default PasswordInput
