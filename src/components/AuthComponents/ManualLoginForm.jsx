@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import axios from "axios";
+import {useNavigate} from "react-router";
 
 import validateForm from "../../utils/ValidateForm.js";
 import NameInput from "./FormInputComponents/NameInput";
@@ -10,6 +11,7 @@ import WarningIcon from "../../icons/WarningIcon";
 import LoadingSpinner from "../LoadingComponents/LoadingSpinner";
 const ManualLoginForm = () => {
   const [toggleForm, settoggleForm] = useState(false);
+  const navigate = useNavigate();
 
   const handleToggleForm = () => {
     settoggleForm(!toggleForm);
@@ -69,6 +71,8 @@ const ManualLoginForm = () => {
           password: SignUpform.password,
         });
 
+        localStorage.setItem("token",response.data.token);
+        navigate("/");
         console.log(response);
 
   
@@ -102,6 +106,8 @@ const ManualLoginForm = () => {
           password: Loginform.password,
          })
 
+         localStorage.setItem("token",response.data.token);
+        navigate("/");
          console.log(response);
          
       }
